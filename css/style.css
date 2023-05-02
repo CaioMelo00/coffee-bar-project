@@ -1,0 +1,166 @@
+body {
+    background-color: #E3CFB7;
+}
+
+header { 
+    background-color:#402915;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5%;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-bar a {
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+.nav-bar a:hover {
+    color: #D99A4E;
+}
+
+a {
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.container{
+    height: 80vh;
+    display: grid;
+}
+
+main {
+    padding: 50px;
+}
+
+.title, .subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+    color: #F2F2F2;
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #D99A4E;
+}
+
+.about {
+    background-color: #A66F3F;
+    color: #F2F2F2;
+    padding: 50px;
+    margin: 80px 80px 50px 80px;
+    box-shadow: 3px 8px 4px rgba(0, 0, 0, 0.35);
+}
+
+.about-section {
+    margin: 40px auto;
+}
+
+b {
+    font-weight: 600;
+}
+
+.description1, .description2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+
+.description2 {
+    text-align: center;
+}
+
+.benefits {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.about-section > div > iframe {
+    width: 100%;
+    object-fit: cover;
+}
+
+.copyright {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #402915;
+    border-top: 10px solid #D99A4E;
+    color: #F2F2F2;
+    margin: 0;
+    width: 100%;
+}
+
+.copyright > p {
+    border: 0;
+    margin: 0;
+    padding: 20px;
+}
+
+.copyright-info {
+    font-weight: 600;
+}
+
+@media screen and (max-device-width: 480px) {
+
+    header{
+        padding: 10px 5%;
+        position: sticky;
+    }
+
+    header img{
+        width: 30%;
+    }
+
+    nav a{
+        font-size: 1em;
+        padding-left: 1em;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .title {
+      font-size: 3rem;
+    }
+  
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .description1, .description2 {
+        font-size: 1.5rem;
+    }
+}
