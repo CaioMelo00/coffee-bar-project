@@ -86,6 +86,10 @@ b {
     font-weight: 600;
 }
 
+hr {
+    border: 2px solid #F2F2F2;
+}
+
 .description1, .description2 {
     font-family: 'Inter', sans-serif;
     font-size: 28px;
