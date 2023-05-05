@@ -28,6 +28,11 @@ a {
     cursor: pointer;
 }
 
+.container{
+    height: 90vh;
+    display: grid;
+}
+
 .content{
     display: flex;
     justify-content: center;
@@ -37,15 +42,9 @@ a {
     background-size: cover;
     background-position: center;
     align-items: center;
-    text-align: center;
     object-fit: cover;
     object-position: center;
     width: 100%;
-}
-
-.container{
-    height: 80vh;
-    display: grid;
 }
 
 main {
@@ -76,6 +75,7 @@ main {
     padding: 50px;
     margin: 80px 80px 50px 80px;
     box-shadow: 3px 8px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
 }
 
 .about-section {
@@ -129,24 +129,6 @@ hr {
     font-weight: 600;
 }
 
-@media screen and (max-device-width: 480px) {
-
-    header{
-        padding: 10px 5%;
-        position: sticky;
-    }
-
-    header img{
-        width: 30%;
-    }
-
-    nav a{
-        font-size: 1em;
-        padding-left: 1em;
-    }
-
-}
-
 @media screen and (max-width: 800px) {
     main {
         width: 100%;
@@ -167,4 +149,11 @@ hr {
     .description1, .description2 {
         font-size: 1.5rem;
     }
+}
+
+@media (max-width: 100px) {
+    .content {
+        width: 40%;
+    }
+
 }
